@@ -71,7 +71,7 @@ public class PersonController {
     @RequestMapping("edit")
     public ModelAndView edit(@RequestParam int id) {
         
-        ModelAndView model = new ModelAndView("addPerson");
+        ModelAndView model = new ModelAndView("add");
         
         Person person = personDAO.findOne(id);
         model.addObject("person", person);
